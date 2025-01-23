@@ -62,8 +62,9 @@ body, html {
 
 /* Circular Logo Container */
 .logo-container {
-    width: 350px; /* Increased size for better visibility */
-    height: 350px; /* Increased size */
+    width: 700px; /* Increased size for better visibility */
+    height: 700px
+    3px; /* Increased size */
     border-radius: 50%;
     overflow: hidden;
     position: relative; /* Position for the button */
