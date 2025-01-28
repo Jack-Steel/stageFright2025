@@ -1,52 +1,69 @@
 /* General Reset */
-body, html {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: black !important; /* Ensures background is black */
-    color: white;
-    height: 100%;
+    box-sizing: border-box;
 }
 
-/*Navbar styling*/
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a; /* Slightly darkened background for depth */
+    color: white;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    line-height: 1.6;
+}
+
+/* Navbar styling */
 .navbar {
     background-image: linear-gradient(to right, rgb(123, 3, 159), rgb(46, 1, 98));
-    padding: 15px;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-brand {
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: 600;
     color: #fff;
     text-decoration: none;
-    font-family: "PT Sans";
+    font-family: 'PT Sans', sans-serif;
+    letter-spacing: 2px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-brand:hover {
-    color: #ccc;
+    color: #f0f0f0;
+    transform: scale(1.1); /* Slight scale on hover for brand */
 }
+
 .navbar-nav {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 .nav-item {
-    margin-left: 20px;
+    margin-left: 30px;
 }
+
 .nav-link {
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
-    font-family: "Fjord One", Arial, Helvetica, sans-serif;
-    font-size: 1.75em;
+    font-size: 1.1rem;
+    font-family: 'Fjord One', serif;
+    transition: color 0.3s ease;
 }
+
 .nav-link:hover {
-    color: #ccc;
+    color: #ff0066; /* Highlight color */
+    transform: translateY(-5px); /* Slight hover animation */
 }
 
 /* Hero Section */
@@ -56,58 +73,68 @@ body, html {
     align-items: center;
     height: 100vh;
     text-align: center;
-    background-color: black; /* Ensures hero section fills the screen */
     position: relative;
+    background: url('your-image-path.jpg') no-repeat center center/cover;
+    animation: hero-background 10s infinite alternate;
+}
+
+@keyframes hero-background {
+    0% { background-position: center; }
+    100% { background-position: 60% 40%; }
 }
 
 /* Circular Logo Container */
 .logo-container {
-    width: 700px; /* Increased size for better visibility */
-    height: 700px
-    3px; /* Increased size */
+    width: 750px;
+    height: 750px;
     border-radius: 50%;
     overflow: hidden;
-    position: relative; /* Position for the button */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: auto;
+    box-shadow: 0 0 15px rgba(255, 0, 102, 0.5); /* Subtle shadow for depth */
 }
 
-/* Circular Logo */
+.logo-container:hover {
+    transform: scale(1.1); /* Smooth scale on hover */
+    box-shadow: 0 10px 30px rgba(255, 0, 102, 0.7); /* Enhanced shadow on hover */
+}
+
 .logo {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image fits inside the circle */
-    transition: transform 0.3s ease;
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
-/* Enlarge Logo on Hover */
 .logo-container:hover .logo {
-    transform: scale(1.2); /* Increase size more when hovered */
+    transform: scale(1.15); /* Enlarged logo on hover */
 }
 
 /* Learn More Button Inside the Logo */
 .learn-more-btn {
     position: absolute;
-    bottom: 15px; /* Position the button at the bottom of the logo */
+    bottom: 20px;
     background-color: #ff0066;
     color: black;
     border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 1.1rem;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 1.25rem;
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 0 5px 20px rgba(255, 0, 102, 0.5);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .learn-more-btn:hover {
     background-color: #ff3399;
     color: white;
-    box-shadow: 0 10px 30px rgba(255, 0, 102, 0.7);
+    box-shadow: 0 10px 40px rgba(255, 0, 102, 0.7);
+    transform: translateY(-5px); /* Subtle lift on hover */
 }
 
 /*About Styles*/
@@ -119,22 +146,25 @@ body, html {
 /* Footer Styles */
 footer {
     background-color: #111;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     position: relative;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
 }
 
 footer a {
     color: white;
-    margin: 0 15px;
+    margin: 0 20px;
     font-size: 1.5rem;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
     color: #ff0066;
+    transform: scale(1.1); /* Hover effect */
 }
 
 .social-icons {
@@ -143,12 +173,40 @@ footer a:hover {
 
 .social-icons a {
     color: white;
-    font-size: 2rem;
-    margin: 0 10px;
-    transition: color 0.3s ease;
+    font-size: 2.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons a:hover {
     color: #ff0066;
+    transform: translateY(-5px); /* Hover lift effect */
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 10px;
+    }
+
+    .navbar-brand {
+        font-size: 2rem;
+    }
+
+    .nav-item {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+
+    .logo-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .learn-more-btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
