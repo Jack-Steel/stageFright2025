@@ -56,7 +56,7 @@ body, html {
 .nav-link {
     color: #fff;
     text-decoration: none;
-    font-size: 1.75em;
+    font-size: 1.1rem;
     font-family: 'Fjord One', serif;
     transition: color 0.3s ease;
 }
@@ -184,7 +184,31 @@ footer a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .navbar-brand {
+        font-size: 2.2rem;
+    }
+
+    .nav-item {
+        margin-left: 20px;
+    }
+
+    .logo-container {
+        width: 650px;
+        height: 650px;
+    }
+
+    .learn-more-btn {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 992px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -193,20 +217,125 @@ footer a:hover {
 
     .navbar-brand {
         font-size: 2rem;
+        text-align: center;
+        margin-bottom: 15px;
     }
 
     .nav-item {
-        margin-left: 15px;
+        margin-left: 0;
         margin-bottom: 10px;
     }
 
     .logo-container {
-        width: 500px;
-        height: 500px;
+        width: 550px;
+        height: 550px;
     }
 
     .learn-more-btn {
         font-size: 1rem;
-        padding: 12px 25px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+
+    .logo-container {
+        width: 450px;
+        height: 450px;
+    }
+
+    .learn-more-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    footer a {
+        font-size: 1.2rem;
+    }
+
+    .social-icons a {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+
+    .logo-container {
+        width: 400px;
+        height: 400px;
+    }
+
+    .learn-more-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 6px;
+    }
+
+    .logo-container {
+        width: 350px;
+        height: 350px;
+    }
+
+    .learn-more-btn {
+        font-size: 0.85rem;
+        padding: 7px 12px;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
     }
 }
