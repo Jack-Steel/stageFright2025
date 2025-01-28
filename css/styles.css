@@ -110,6 +110,12 @@ body, html {
     box-shadow: 0 10px 30px rgba(255, 0, 102, 0.7);
 }
 
+/*About Styles*/
+.aboutColumns{
+    font-family: "PT Sans", sans-serif, Arial;
+    font-size: 1.2em;
+}
+
 /* Footer Styles */
 footer {
     background-color: #111;
