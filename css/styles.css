@@ -85,8 +85,6 @@ body, html {
 
 /* Circular Logo Container */
 .logo-container {
-    width: 750px;
-    height: 750px;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
@@ -147,6 +145,22 @@ body, html {
     border-radius: 20px;
 }
 
+/*Tour Styles*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  .map-container {
+    width: 100%;
+    height: 620px;
+  }
+
 /* Footer Styles */
 footer {
     background-color: #111;
@@ -201,11 +215,6 @@ footer a:hover {
         margin-left: 20px;
     }
 
-    .logo-container {
-        width: 650px;
-        height: 650px;
-    }
-
     .learn-more-btn {
         font-size: 1.1rem;
         padding: 12px 25px;
@@ -230,11 +239,6 @@ footer a:hover {
         margin-bottom: 10px;
     }
 
-    .logo-container {
-        width: 550px;
-        height: 550px;
-    }
-
     .learn-more-btn {
         font-size: 1rem;
         padding: 10px 20px;
@@ -255,11 +259,6 @@ footer a:hover {
     .nav-item {
         margin-left: 0;
         margin-bottom: 8px;
-    }
-
-    .logo-container {
-        width: 450px;
-        height: 450px;
     }
 
     .learn-more-btn {
@@ -292,11 +291,6 @@ footer a:hover {
         margin-bottom: 8px;
     }
 
-    .logo-container {
-        width: 400px;
-        height: 400px;
-    }
-
     .learn-more-btn {
         font-size: 0.9rem;
         padding: 8px 15px;
@@ -323,11 +317,6 @@ footer a:hover {
     .nav-item {
         margin-left: 0;
         margin-bottom: 6px;
-    }
-
-    .logo-container {
-        width: 350px;
-        height: 350px;
     }
 
     .learn-more-btn {
