@@ -187,6 +187,7 @@ table {
 .btn {
     background-color: #4880ad; /* Dark reddish-purple */
     color: white;
+    font-family: 'Fjord One', serif;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -230,11 +231,12 @@ tr:nth-child(even) td {
 
 /* Merch Styles*/
 .cart-container{
-    width: 900px;
+    width: 70%;
+    font-family: 'Fjord One', serif;
     max-width: 90vw;
     margin: auto;
     text-align: center;
-    padding-top: 10px;
+    padding: 1%;
     transition: transform .5s;
 }
 
@@ -291,7 +293,7 @@ header .icon-cart span{
 
 .listProduct .item .price{
     letter-spacing: 2px;
-    font-size: small;
+    font-size: 1.2em;
 }
 
 .listProduct .item button{
@@ -303,7 +305,8 @@ header .icon-cart span{
 }
 
 .cartTab{
-    width: 400px;
+    font-family: 'Fjord One', serif;
+    width: 385px;
     background-color: #353432;
     color: #eee;
     position: fixed;
@@ -343,6 +346,12 @@ body.showCart .cart-container{
 
 .cartTab .btns .close{
     background-color: #eee;
+}
+
+.cartTab .btns .checkOut {
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%;
 }
 
 .cartTab .listCart .item img{
@@ -443,7 +452,7 @@ footer a:hover {
 @media (max-width: 992px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 20px 10px;
     }
 

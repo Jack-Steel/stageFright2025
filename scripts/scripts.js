@@ -24,9 +24,9 @@ const addDataToHTML = () => {
             newProduct.classList.add('item');
             newProduct.dataset.id = product.id;
             newProduct.innerHTML = `
-                <img src="${product.image}" alt="">
+                <img src="${product.image}" alt="${product.name}">
                 <h2>${product.name}</h2>
-                <div class="$${product.price}"></div>
+                <div class="price">$${product.price}</div>
                 <button class="addCart btn btn-warning">Add to Cart</button>
             `;
             listProductHTML.appendChild(newProduct);
@@ -108,6 +108,10 @@ listCartHTML.addEventListener('click', (event) => {
         changeQuantity(product_id, type);
     }
 })
+
+document.querySelector('.checkOut').addEventListener('click', function() {
+    window.open('https://www.sandbox.paypal.com/cgi-bin/webscr', '_blank');
+  });
 
 const changeQuantity = (product_id, type) => {
     let positionItemInCart = carts.findIndex((value) => value.product_id == product_id);
