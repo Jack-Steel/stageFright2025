@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "T-Shirt",
+        "price": 25,
+        "image": "images/shirt.png"
+    },
+    {
+        "id": 2,
+        "name": "Hoodie",
+        "price": 45,
+        "image": "images/hoodie.png" 
+    },
+    {
+        "id": 3,
+        "name": "Wrist Band",
+        "price": 5,
+        "image": "images/wristband.png"
+    },
+    {
+        "id": 4,
+        "name": "Hat",
+        "price": 20,
+        "image": "images/hat.png"
+    },
+    {
+        "id": 5,
+        "name": "Beanie",
+        "price": 15,
+        "image": "images/beanie.png"
+    },
+    {
+        "id": 6,
+        "name": "Pants",
+        "price": 30,
+        "image": "images/pants.png"
+    }
+]
